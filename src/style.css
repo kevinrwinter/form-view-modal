@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+body {
+  background-color: #1f4d89;
+  font-family: "Inter", sans-serif;
+}
+
+/* * * FORM * * */
+
+form {
+  margin-bottom: 4rem;
+}
+
+.form-group {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin: 1.5rem;
+  align-items: baseline;
+}
+
+label {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+input,
+textarea,
+select {
+  width: 200px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border-style: none;
+}
+
+select {
+  width: 219px;
+}
+
+.submit-btn {
+  margin-left: auto;
+  width: 219px;
+  border: none;
+  background-color: #136613;
+}
+
+/* * * NOTEBOOK * * */
+
+.notebook {
+  background-color: #ededed;
+  margin: 2rem;
+}
+
+.notebook p,
+.margin {
+  padding: 0.25rem;
+  margin-left: 1rem;
+}
+
+.view-block {
+  display: flex;
+  border-bottom: 1px solid grey;
+}
+
+.margin {
+  width: 1rem;
+  border-right: 1px double red;
+  /* border-style: double; */
+}
