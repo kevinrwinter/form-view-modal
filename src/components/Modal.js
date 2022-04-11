@@ -1,1 +1,27 @@
-export default function Modal() {}
+export default function Modal(props) {
+  return (
+    <div className="overlay">
+      <div className="modal">
+        <h2>This is your note:</h2>
+        <p>
+          First name: <span>{props.firstname}</span>
+        </p>
+        <p>
+          Last name: <span>{props.lastname}</span>
+        </p>
+        <p>
+          Phone: <span>{props.phone}</span>
+        </p>
+        <p>
+          Role: <span>{props.role}</span>
+        </p>
+        <p>
+          Message: <span>{props.message}</span>
+        </p>
+
+        <button onClick={props.close}>Yes, I am sure</button>
+        <button onClick={props.close}>No, I don't want to post</button>
+      </div>
+    </div>
+  );
+}

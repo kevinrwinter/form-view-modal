@@ -1,32 +1,34 @@
-import React from "react";
+// import React from "react";
 
 function Form(props) {
   return (
-    <form action="">
+    <form onChange={props.change} onSubmit={props.submit}>
       <div className="form-group">
         <label htmlFor="firstname">First name:</label>
-        <input type="text" name="firstname" id="first-name" />
+        <input type="text" name="firstname" id="firstname" required />
       </div>
       <div className="form-group">
         <label htmlFor="lastname">Last name:</label>
-        <input type="text" name="lastname" id="last-name" />
+        <input type="text" name="lastname" id="lastname" required />
       </div>
       <div className="form-group">
-        <label htmlFor="phonenumber">Phone:</label>
-        <input type="tel" name="phonenumber" id="phone-number" />
+        <label htmlFor="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" required />
       </div>
       <div className="form-group">
         <label htmlFor="role">Role:</label>
-        <select name="role" id="role">
-          <option value="">--Please choose an option--</option>
-          <option value="teacher">Teacher</option>
-          <option value="student">Student</option>
-          <option value="other">Other</option>
+        <select name="role" id="role" required>
+          <option value="" invalid="true" hidden>
+            --Please choose an option--
+          </option>
+          <option value="Teacher">Teacher</option>
+          <option value="Student">Student</option>
+          <option value="Other">Other</option>
         </select>
       </div>
       <div className="form-group">
         <label htmlFor="message">Message:</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <textarea name="message" id="message"></textarea>
       </div>
       <div className="form-group">
         <input className="submit-btn" type="submit" value="SEND" />
