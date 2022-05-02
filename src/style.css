@@ -1,20 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #1f4d89;
   font-family: "Inter", sans-serif;
+  background-color: #1f4d89;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* * * FORM * * */
 
 form {
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
+  /* display: inline-block; */
+
+  padding: 2rem;
+  /* background-color: #7e8ec9; */
+  color: #fff;
 }
 
 .form-group {
   /* border: 1px solid black; */
   display: flex;
-  justify-content: space-between;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
   width: 400px;
   margin: 1.5rem;
   align-items: baseline;
@@ -22,21 +37,31 @@ form {
 
 label {
   font-size: 1.1rem;
-  color: #fff;
+  /* color: #fff; */
+  /* margin-bottom: 0.5rem; */
+
+  width: 150px;
+  display: inline-block;
 }
 
 input,
 textarea,
 select {
-  width: 200px;
-  padding: 0.5rem;
+  background-color: #f4f4f4;
+  /* width: 200px; */
+  /* padding: 0.5rem; */
+  /* border-radius: 5px; */
+  /* border-style: none; */
+  border: 1px solid rgb(102, 102, 102);
+  width: 250px;
+  padding: 0.8rem;
   border-radius: 5px;
-  border-style: none;
+  font-size: 0.9rem;
 }
 
-select {
+/* select {
   width: 217px;
-}
+} */
 
 textarea {
   font-family: inherit;
@@ -44,7 +69,7 @@ textarea {
 
 .submit-btn {
   margin-left: auto;
-  width: 219px;
+  width: 250px;
   border: none;
   background-color: #136613;
   color: #fff;
@@ -53,20 +78,41 @@ textarea {
 
 /* * * NOTEBOOK * * */
 
+.notebook-container {
+  /* display: inline-block; */
+  /* width: 600px; */
+  margin-top: 0;
+  padding: 2rem;
+  width: 100%;
+}
+
 .notebook {
   background-color: #ededed;
   margin: 2rem;
+  position: relative;
+  box-shadow: 0 0 5px rgb(121, 121, 121);
 }
+
+/* .notebook::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  border-left: 1px solid rgb(255, 77, 0);
+  border-right: 1px solid rgb(255, 77, 0);
+  position: absolute;
+  left: 35px;
+} */
 
 .notebook p,
 .margin {
-  padding: 0.25rem;
+  padding: 1rem;
   margin-left: 1rem;
   font-weight: 700;
 }
 
 .notebook span {
   font-weight: 400;
+  font-family: cursive;
 }
 
 .view-block {
@@ -125,4 +171,20 @@ textarea {
   border: none;
   background-color: #136613;
   color: #fff;
+}
+
+.notes-list {
+  background-color: #fff;
+  padding: 2rem;
+  padding-left: 4rem;
+  margin: 2rem 0;
+}
+
+.notes-list li {
+  margin: 1rem 0;
+  /* border-bottom: 1px solid grey; */
+}
+
+.input-area {
+  display: flex;
 }

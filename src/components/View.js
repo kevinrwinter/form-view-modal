@@ -2,8 +2,8 @@
 
 function View(props) {
   return (
-    <div>
-      <h2>This is your input: </h2>
+    <div className="notebook-container">
+      {/* <h2>This is your input: </h2> */}
       <div className="notebook">
         <div className="view-block">
           <div className="margin"></div>

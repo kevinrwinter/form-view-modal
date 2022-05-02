@@ -19,7 +19,7 @@ export default function Modal(props) {
           Message: <span>{props.message}</span>
         </p>
 
-        <button onClick={props.close}>Yes, I am sure</button>
+        <button onClick={props.submit}>Yes, I am sure</button>
         <button onClick={props.close}>No, I don't want to post</button>
       </div>
     </div>

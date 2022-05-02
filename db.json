@@ -1,0 +1,78 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "firstName": "Emmie",
+      "lastName": "White",
+      "phone": "0998877654",
+      "role": "teacher",
+      "message": "Some really important message"
+    },
+    {
+      "id": 2,
+      "firstName": "Penelope",
+      "lastName": "Snow",
+      "phone": "343117",
+      "role": "student",
+      "message": "Back from the underworld"
+    },
+    {
+      "id": 3,
+      "firstName": "Alexander",
+      "lastName": "Nevermind",
+      "phone": "07061957",
+      "role": "other",
+      "message": "What it is!"
+    },
+    {
+      "id": 4,
+      "firstName": "Pong",
+      "lastName": "Odysseus",
+      "phone": "07061957",
+      "role": "other",
+      "message": "What do you call it?"
+    },
+    [
+      {
+        "id": 1,
+        "firstName": "Emmie",
+        "lastName": "White",
+        "phone": "0998877654",
+        "role": "teacher",
+        "message": "Some really important message"
+      },
+      {
+        "id": 2,
+        "firstName": "Penelope",
+        "lastName": "Snow",
+        "phone": "343117",
+        "role": "student",
+        "message": "Back from the underworld"
+      },
+      {
+        "id": 3,
+        "firstName": "Alexander",
+        "lastName": "Nevermind",
+        "phone": "07061957",
+        "role": "other",
+        "message": "What it is!"
+      },
+      {
+        "id": 4,
+        "firstName": "Pong",
+        "lastName": "Odysseus",
+        "phone": "07061957",
+        "role": "other",
+        "message": "What do you call it?"
+      }
+    ],
+    {
+      "firstname": "Henry",
+      "lastname": "Krinkle",
+      "phone": "555244233",
+      "role": "Other",
+      "message": "Real suspicious",
+      "id": 5
+    }
+  ]
+}
