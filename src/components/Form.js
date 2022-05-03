@@ -1,23 +1,24 @@
 // import React from "react";
 
-function Form(props) {
+// Destructured props
+function Form({ change, submit, firstName, lastName, phone, role, message }) {
   return (
-    <form onChange={props.change} onSubmit={props.submit}>
+    <form onChange={change} onSubmit={submit}>
       <div className="form-group">
         <label htmlFor="firstname">First name:</label>
-        <input type="text" name="firstname" id="firstname" required />
+        <input type="text" name="firstName" id="firstname" required defaultValue={firstName} />
       </div>
       <div className="form-group">
         <label htmlFor="lastname">Last name:</label>
-        <input type="text" name="lastname" id="lastname" required />
+        <input type="text" name="lastName" id="lastname" required defaultValue={lastName} />
       </div>
       <div className="form-group">
         <label htmlFor="phone">Phone:</label>
-        <input type="tel" name="phone" id="phone" required />
+        <input type="tel" name="phone" id="phone" required defaultValue={phone} />
       </div>
       <div className="form-group">
         <label htmlFor="role">Role:</label>
-        <select name="role" id="role" required>
+        <select name="role" id="role" required defaultValue={role}>
           <option value="" invalid="true" hidden>
             --Please choose an option--
           </option>
@@ -28,7 +29,7 @@ function Form(props) {
       </div>
       <div className="form-group">
         <label htmlFor="message">Message:</label>
-        <textarea name="message" id="message"></textarea>
+        <textarea name="message" id="message" required defaultValue={message}></textarea>
       </div>
       <div className="form-group">
         <input className="submit-btn" type="submit" value="SEND" />

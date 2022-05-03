@@ -4,10 +4,10 @@ export default function Modal(props) {
       <div className="modal">
         <h2>This is your note:</h2>
         <p>
-          First name: <span>{props.firstname}</span>
+          First name: <span>{props.firstName}</span>
         </p>
         <p>
-          Last name: <span>{props.lastname}</span>
+          Last name: <span>{props.lastName}</span>
         </p>
         <p>
           Phone: <span>{props.phone}</span>

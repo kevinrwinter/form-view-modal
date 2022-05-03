@@ -8,13 +8,13 @@ function View(props) {
         <div className="view-block">
           <div className="margin"></div>
           <p>
-            Firstname: <span>{props.firstname}</span>
+            Firstname: <span>{props.firstName}</span>
           </p>
         </div>
         <div className="view-block">
           <div className="margin"></div>
           <p>
-            Lastname: <span>{props.lastname}</span>
+            Lastname: <span>{props.lastName}</span>
           </p>
         </div>
         <div className="view-block">
