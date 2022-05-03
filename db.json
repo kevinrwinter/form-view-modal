@@ -41,12 +41,20 @@
       "id": 5
     },
     {
-      "firstName": "Edit",
-      "lastName": "Ed",
-      "phone": "0451051976",
+      "firstName": "Mario",
+      "lastName": "Mario",
+      "phone": "555888777",
+      "role": "Other",
+      "message": "Here we have destructured props",
+      "id": 7
+    },
+    {
+      "firstName": "Edited again",
+      "lastName": "Edited again",
+      "phone": "55566642",
       "role": "Student",
-      "message": "This message has been edited",
-      "id": 6
+      "message": "This has been edited again",
+      "id": 8
     }
   ]
 }

@@ -1,6 +1,6 @@
 // import React from "react";
 
-function View(props) {
+function View({ firstName, lastName, phone, role, message }) {
   return (
     <div className="notebook-container">
       {/* <h2>This is your input: </h2> */}
@@ -8,31 +8,31 @@ function View(props) {
         <div className="view-block">
           <div className="margin"></div>
           <p>
-            Firstname: <span>{props.firstName}</span>
+            Firstname: <span>{firstName}</span>
           </p>
         </div>
         <div className="view-block">
           <div className="margin"></div>
           <p>
-            Lastname: <span>{props.lastName}</span>
+            Lastname: <span>{lastName}</span>
           </p>
         </div>
         <div className="view-block">
           <div className="margin"></div>
           <p>
-            Phone: <span>{props.phone}</span>
+            Phone: <span>{phone}</span>
           </p>
         </div>
         <div className="view-block">
           <div className="margin"></div>
           <p>
-            Role: <span>{props.role}</span>
+            Role: <span>{role}</span>
           </p>
         </div>
         <div className="view-block">
           <div className="margin"></div>
           <p>
-            Message: <span>{props.message}</span>
+            Message: <span>{message}</span>
           </p>
         </div>
       </div>
